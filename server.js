@@ -14,3 +14,7 @@ mongoose.connect("mongodb://localhost/Person",
 app.listen(3000,()=>{
    console.log("the server is connected to port 3000")
 })
+
+const PersonRoute =require('./Routes/personRoute');
+
+app.use('/person',PersonRoute);

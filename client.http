@@ -1,0 +1,53 @@
+GET http://localhost:3000/person
+
+
+
+
+###
+
+
+
+
+GET http://localhost:3000/person/62a97fe2b4455605c8e084e1
+
+
+
+###
+
+
+POST  http://localhost:3000/person/createperson
+Content-Type: application/json
+
+
+{
+    "name":"sai venkat",
+    "age":22,
+    "gender":"male",
+    "proffision":"free loader",
+    "hobbies":["coding","gaming"]
+
+}
+
+
+
+###
+
+
+
+DELETE  http://localhost:3000/person/62a9806a2092f3458d1d7880
+
+###
+
+
+PATCH   http://localhost:3000/person/62a97fe2b4455605c8e084e1
+Content-Type: application/json
+
+
+{
+    "name":"sai venkat",
+    "age":22,
+    "gender":"male",
+    "proffision":"i work at mnc company",
+    "hobbies":["coding","gaming"]
+
+}
